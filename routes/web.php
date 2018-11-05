@@ -26,3 +26,21 @@ Route::get('pesan', function () {
 Route::post('pesan/kirim', function () {
     return view('pesan-kirim');
 });
+
+Route::get('coba1', function () {
+    return view('coba1');
+});
+
+Route::get('coba2', function () {
+    return view('coba2');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('admin')->group(function() {
+  Route::get('/', 'AdminController@index')->name('admin.dashboard');
+  Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+  Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+});

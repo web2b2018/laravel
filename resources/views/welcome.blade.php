@@ -84,7 +84,8 @@
 
                 <div class="links">
                     <a href="pesan">Pesan</a>
-					<a href="tentang">About</a>
+                    <a href="coba1">Templating</a>
+					          <a href="tentang">About</a>
                 </div>
             </div>
         </div>
